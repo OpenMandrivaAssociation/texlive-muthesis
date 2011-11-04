@@ -1,3 +1,9 @@
+# revision 23861
+# category Package
+# catalog-ctan /macros/latex/contrib/muthesis
+# catalog-date 2011-08-26 08:26:07 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-muthesis
 Version:	20110826
 Release:	1
@@ -38,6 +44,7 @@ Science.
 %{_texmfdistdir}/tex/latex/muthesis/muthesis.cls
 %{_texmfdistdir}/tex/latex/muthesis/third-rep.cls
 %doc %{_texmfdistdir}/doc/latex/muthesis/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ Science.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
