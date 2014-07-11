@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-muthesis
 Version:	20110826
-Release:	7
+Release:	8
 Summary:	Classes for University of Manchester Dept of Computer Science
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/muthesis
