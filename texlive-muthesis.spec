@@ -1,9 +1,3 @@
-# revision 23861
-# category Package
-# catalog-ctan /macros/latex/contrib/muthesis
-# catalog-date 2011-08-26 08:26:07 +0200
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-muthesis
 Version:	20170414
 Release:	1
@@ -33,9 +27,8 @@ Science.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/muthesis/muthesis.cls
-%{_texmfdistdir}/tex/latex/muthesis/third-rep.cls
-%doc %{_texmfdistdir}/doc/latex/muthesis/README
+%{_texmfdistdir}/tex/latex/muthesis
+%doc %{_texmfdistdir}/doc/latex/muthesis
 
 #-----------------------------------------------------------------------
 %prep
@@ -46,17 +39,3 @@ Science.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20110826-2
-+ Revision: 754239
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20110826-1
-+ Revision: 719092
-- texlive-muthesis
-- texlive-muthesis
-- texlive-muthesis
-- texlive-muthesis
-
