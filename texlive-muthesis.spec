@@ -1,5 +1,5 @@
 Name:		texlive-muthesis
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Classes for University of Manchester Dept of Computer Science
 Group:		Publishing
