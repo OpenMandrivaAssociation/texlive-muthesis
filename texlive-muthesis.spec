@@ -1,12 +1,12 @@
 Name:		texlive-muthesis
-Version:	20190228
+Version:	23861
 Release:	1
 Summary:	Classes for University of Manchester Dept of Computer Science
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/muthesis
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -18,12 +18,12 @@ from the University of Manchester's Department of Computer
 Science.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -32,7 +32,7 @@ Science.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
