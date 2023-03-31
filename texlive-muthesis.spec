@@ -1,6 +1,6 @@
 Name:		texlive-muthesis
 Version:	23861
-Release:	1
+Release:	2
 Summary:	Classes for University of Manchester Dept of Computer Science
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/muthesis
