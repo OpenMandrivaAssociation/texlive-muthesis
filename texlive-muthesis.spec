@@ -3,7 +3,7 @@ Version:	23861
 Release:	2
 Summary:	Classes for University of Manchester Dept of Computer Science
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/muthesis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/muthesis
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/muthesis.doc.r%{version}.tar.xz
